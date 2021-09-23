@@ -2,5 +2,8 @@
     "warehouse": "bigquery",
     "defaultSchema": "dataform",
     "assertionSchema": "dataform_assertions",
-    "defaultDatabase": "curious-furnace-326709"
+    "defaultDatabase": "curious-furnace-326709",
+    "vars": {
+        "startDate": "some-date"
+    }
 }
