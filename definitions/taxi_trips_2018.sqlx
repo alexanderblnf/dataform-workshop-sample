@@ -1,0 +1,5 @@
+config {
+  type: "declaration",
+  schema: "ny_taxi_trips",
+  name: "tlc_yellow_trips_2018",
+}

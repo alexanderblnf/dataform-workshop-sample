@@ -1,0 +1,12 @@
+config {
+  type: "table",
+  assertions: {
+    uniqueKey: ["pickup_location_id"]
+  }
+}
+
+SELECT
+  vendor_id,
+  trip_distance,
+  pickup_location_id
+FROM ${ref("tlc_yellow_trips_2018")}

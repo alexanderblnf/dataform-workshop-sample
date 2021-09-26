@@ -1,0 +1,8 @@
+config {
+  type: "incremental"
+}
+
+SELECT pickup_datetime, dropoff_datetime, insert_on
+FROM ${ref("tlc_yellow_trips_2018")}
+
+${ when(incremental(), `WHERE insert_on > (SELECT MAX(insert_on) FROM ${self()})`) }

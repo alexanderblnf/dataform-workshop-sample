@@ -1,0 +1,17 @@
+config {
+  type: "view",
+    description: "This view contains the total distance by vendor id",
+  columns: {
+    vendor_id: "Identifier of the vendor",
+    total_distance: "Total distance made by the vendor",
+  },
+  name: "vendor_distances"
+}
+
+SELECT
+  vendor_id,
+  SUM(trip_distance) AS total_distance,
+FROM
+  ${ref("tlc_yellow_trips_2018")}
+GROUP BY
+  vendor_id

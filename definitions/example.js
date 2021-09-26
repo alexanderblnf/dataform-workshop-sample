@@ -1,5 +1,5 @@
-const startDate = dataform.projectConfig.vars.startDate
-const query = "SELECT '" + startDate + "' as test"
+const exampleValue = dataform.projectConfig.vars.exampleValue
+const query = "SELECT '" + exampleValue + "' as test"
 
 publish("example")
     .query(query)

@@ -1,0 +1,34 @@
+config {
+  type: "test",
+  dataset: "vendor_distances"
+}
+
+input "tlc_yellow_trips_2018" {
+  SELECT 
+    0 AS vendor_id,
+    0.5 AS trip_distance
+  UNION ALL
+  SELECT 
+    1 AS vendor_id,
+    1.5 AS trip_distance
+  UNION ALL
+  SELECT 
+    0 AS vendor_id,
+    3.0 AS trip_distance
+  UNION ALL
+  SELECT 
+    2 AS vendor_id,
+    5.0 AS trip_distance
+}
+
+SELECT 
+  0 AS vendor_id, 
+  3.5 AS total_distance 
+UNION ALL
+SELECT 
+  1 AS vendor_id,
+  1.5 AS total_distance
+UNION ALL
+SELECT 
+  2 AS vendor_id,
+  5 AS total_distance
