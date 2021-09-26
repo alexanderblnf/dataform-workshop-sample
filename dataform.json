@@ -4,6 +4,8 @@
     "assertionSchema": "dataform_assertions",
     "defaultDatabase": "curious-furnace-326709",
     "vars": {
-        "exampleValue": "some-value"
+        "exampleValue": "some-value",
+        "author": "alexb",
+        "isAudienceEnabled": ""
     }
 }
