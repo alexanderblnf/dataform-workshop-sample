@@ -3,4 +3,5 @@ const query = "SELECT '" + exampleValue + "' as test"
 
 publish("example")
     .query(query)
-    .type("view");
+    .type("view")
+    .tags(["orchestrator_example"]);

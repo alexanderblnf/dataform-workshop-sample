@@ -1,9 +1,13 @@
 config {
-  type: "table",
-  assertions: {
-    uniqueKey: ["pickup_location_id"]
-  }
+  type: "table"
 }
+
+-- config {
+--   type: "table",
+--   assertions: {
+--     uniqueKey: ["pickup_location_id"]
+--   }
+-- }
 
 SELECT
   vendor_id,
