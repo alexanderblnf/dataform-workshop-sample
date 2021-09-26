@@ -1,7 +1,9 @@
 const isAudienceEnabled = dataform.projectConfig.vars.isAudienceEnabled;
+let author = dataform.projectConfig.vars.author;
+const exampleValue = dataform.projectConfig.vars.exampleValue;
 
 if (isAudienceEnabled !== "") {
-    publish("example")
+    publish("example_audience")
         .type("incremental")
         .query(ctx => `
             SELECT 

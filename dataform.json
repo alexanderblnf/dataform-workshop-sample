@@ -6,6 +6,6 @@
     "vars": {
         "exampleValue": "some-value",
         "author": "alexb",
-        "isAudienceEnabled": ""
+        "isAudienceEnabled": "yes"
     }
 }
